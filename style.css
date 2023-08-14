@@ -210,3 +210,154 @@
   height: 100%;
   width: 100%;
 }
+
+@media screen and (max-width: 600px) {
+  .navBar {
+    margin: 30px auto;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+  }
+
+  .navBar ul {
+    flex: 1;
+    text-align: right;
+  }
+
+  .navBar ul li {
+    display: inline-block;
+    list-style: none;
+    margin: -5px;
+  }
+
+  .navBar ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 0 10px;
+    position: relative;
+  }
+
+  .banner h1 {
+    color: white;
+    font-size: 50px;
+    margin-left: 5%;
+    margin-top: 20%;
+    margin-bottom: 5%;
+  }
+
+  .btn button {
+    padding: 7px 30px;
+    margin-left: 5%;
+    margin-top: 10%;
+    outline: none;
+    border: 1px solid rgb(8, 119, 215);
+    border-radius: 20px;
+    cursor: pointer;
+    color: white;
+    background: transparent;
+    position: relative;
+    overflow: hidden;
+    text-decoration: none;
+  }
+
+  .scrollBg {
+    background: #0a1a4b51;
+    width: 340px;
+    margin: 5% auto;
+    border-radius: 10px;
+    float: left;
+    margin-left: 5%;
+  }
+
+  .scrollDiv {
+    width: 340px;
+    border: 1px solid #ffffff;
+    background: transparent;
+    height: 220px;
+    overflow: hidden;
+    overflow-y: scroll;
+    border-radius: 10px;
+  }
+
+  .scrollBg2 {
+    background: #0a1a4b51;
+    width: 350px;
+
+    border-radius: 10px;
+    float: right;
+    margin-right: 3%;
+    margin-top: 2%;
+  }
+
+  .scrollDiv2 {
+    width: 350px;
+    border: 1px solid #ffffff;
+    background: transparent;
+    height: 300px;
+    overflow: hidden;
+    overflow-y: scroll;
+    border-radius: 10px;
+  }
+
+  .scrollObject {
+    color: white;
+    font-size: 15px;
+    padding: 5%;
+  }
+
+  .scrollObject p {
+    margin: 3% auto;
+  }
+
+  .scrollObject h1 {
+    color: white;
+    font-size: 20px;
+    padding-bottom: 6%;
+  }
+  .scrollObject h2 {
+    color: rgb(8, 119, 215);
+    font-size: 22px;
+    padding-bottom: 5%;
+    padding-top: 3%;
+  }
+  .scrollObject2 {
+    color: white;
+    font-size: 15px;
+    padding: 5%;
+  }
+
+  .scrollObject2 p {
+    margin: 3% auto;
+  }
+  .scrollObject2 h1 {
+    color: white;
+    font-size: 20px;
+    padding-bottom: 3%;
+  }
+
+  .scrollObject2 h2 {
+    color: rgb(8, 119, 215);
+    font-size: 18px;
+    padding-bottom: 5%;
+    padding-top: 3%;
+  }
+
+  .scrollObject2 h3 {
+    color: white;
+    font-size: 17px;
+    padding-bottom: 5%;
+    padding-top: 3%;
+  }
+
+  .image1 {
+    margin: 5% auto;
+    height: 100%;
+    width: 100%;
+  }
+
+  .image2 {
+    margin: 5% auto;
+    height: 100%;
+    width: 100%;
+  }
+}
