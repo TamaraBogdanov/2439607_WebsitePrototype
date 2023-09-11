@@ -14,8 +14,8 @@ const apiKey = "f0BjM6fJZ6AdytjD5xX0eFaEmqUrNKH9eMgLwjyz";
 function fetchAPOD() {
 	const apodDate = document.getElementById("searchDate").value;
 	const apodVideo = document.getElementById("apodVideo");
-	const apodImage = document.getElementById("apod-image");
-	const apodDescription = document.getElementById("apod-description");
+	const apodImage = document.getElementById("apodImage");
+	const apodDescription = document.getElementById("apodDescription");
 
 	//check is date is empty
 	if (apodDate == "") {
@@ -64,6 +64,8 @@ function fetchAPOD() {
 function showGraph(toDate) {
 	const loader = document.getElementById("loader");
 	const graphContainer = document.getElementById("graphContainer");
+	const graphText = document.getElementById("graphText");
+	graphText.style.display = "none";
 	graphContainer.style.display = "none";
 	loader.style.display = "block";
 	let fromDate = new Date(toDate);
@@ -150,7 +152,7 @@ function showGraph(toDate) {
 				.attr("height", function (d) {
 					return height - yScale(d.value);
 				});
-
+			graphText.style.display = "block";
 			graphContainer.style.display = "block";
 			loader.style.display = "none";
 		})

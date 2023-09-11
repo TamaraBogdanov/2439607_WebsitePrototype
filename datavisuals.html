@@ -34,19 +34,22 @@
 </nav>
 
  <main>
+
+  <span id="loader">
+    Busy loading chart below, Please Wait...
+  </span>
+
       <span class="apiText">
       <h1>Nasa live API and Chart</h1>
       <p>
-        Pick any date below to recieve the daily Astronomy picture and description from Nasa's API..
+        Pick any date below to recieve the daily Astronomy picture and description for selected day..
       </p>
-      <p>as well as a chart showcasing how many Asteriods were near earth misses..
+      <p>as well as a chart showcasing how many Asteriods were near earth misses,
       </p>
-        <p>
-          all for that selected date!
-        </p>
-      <div id="loader">
-        Busy Loading Chart, Please Wait...
-      </div>
+      <p>
+          for the last 7 days of selected date. All from Nasa's API!
+      </p>
+     
       <section class="searchBar">        
         <input id="searchDate" type="date" placeholders = "Enter">
         <button id="search" onclick="fetchAPOD()">
@@ -55,17 +58,22 @@
       </section>
       
     
-    <div>
-      <img class="apodIMG" id="apod-image" src="" alt="NASA APOD">
+    <section>
+      <img class="apodIMG" id="apodImage" src="" alt="NASA APOD">
         <iframe src="" id="apodVideo"  frameborder="0"></iframe>
-       <section class="textBox"> 
-        <p style="display: none;"  id="apod-description"></p>
-       </section>
-    </div>
+       <span class="textBox"> 
+        <p id="apodDescription"></p>
+       </span>
+    </section>
 
-    <div id="graphContainer">
-      <svg  width="600" height="500"></svg>   
-    </div>
+    <section id="graphContainer">
+      <svg  width="600" height="500"></svg>
+    </section>
+    <article id="graphText"><p>Depicting the last 7 days,this bar graph shows how many Asteroids were "near misses" from Earth. </p> 
+      <p> The x axis displays the last 7 dates from the date you have seleted above...</p>
+      <p>and the y axis displays the amount of Asteroids that were near misses for those days.</p>
+      <p>All information has been gathered from the live Nasa API. </p>
+    </article>
 </main>
     
 </body>

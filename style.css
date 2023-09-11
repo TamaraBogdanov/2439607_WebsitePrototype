@@ -105,7 +105,7 @@
 }
 
 .banner h1 {
-	color: white;
+	color: rgb(8, 119, 215);
 	font-size: 50px;
 	margin-left: 5%;
 	margin-top: 5%;
@@ -328,15 +328,39 @@
 	margin-right: 10%;
 }
 
+.textBox p {
+	padding: 3%;
+}
 .bar {
 	fill: steelblue;
 }
 #graphContainer {
-	margin-top: 13%;
+	margin-top: 10%;
 	margin-left: 60%;
 	display: none;
+	stroke: white;
 }
 
+.artText {
+	margin-top: 10%;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.artText h1 {
+	color: #fff;
+	font-size: 40px;
+}
+
+#graphText {
+	color: #ffffff;
+	padding: 2%;
+	display: none;
+	margin-top: -20%;
+	margin-right: 30%;
+}
 .apodText {
 	color: #ffffff;
 }
@@ -344,9 +368,6 @@
 	stroke: #ffffff;
 }
 
-#graphContainer p {
-	color: #ffffff;
-}
 .svgColour {
 	color: white;
 	background-color: #ffffff;
@@ -369,7 +390,7 @@
 	color: #fff;
 	font-size: 20px;
 	position: fixed;
-	margin-top: 30%;
+	margin-top: 40%;
 }
 footer {
 	background-color: rgba(13, 80, 139, 0.442);
@@ -379,9 +400,6 @@ footer {
 	height: 60px;
 }
 
-#graphContainer {
-	stroke: white;
-}
 .searchBar {
 	margin: 0;
 	padding: 0;
@@ -416,7 +434,7 @@ footer {
 	}
 
 	.banner h1 {
-		color: white;
+		color: rgb(8, 119, 215);
 		font-size: 50px;
 		margin-left: 5%;
 		margin-top: 20%;
