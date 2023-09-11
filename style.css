@@ -1,100 +1,174 @@
 * {
-  margin: 0;
-  padding: 0;
-  font-family: "Dosis", sans-serif;
-}
-
-.navigation {
-  width: 80%;
-  margin: auto;
+	margin: 0;
+	padding: 0;
+	font-family: "Dosis", sans-serif;
 }
 
 .navBar {
-  margin: 30px auto;
-  display: flex;
-  align-items: center;
-  font-size: 20px;
+	margin: 30px auto;
+	display: flex;
+	align-items: center;
+	font-size: 20px;
+	width: 80%;
+	margin: auto;
 }
 
 .navBar ul {
-  flex: 1;
-  text-align: right;
+	flex: 1;
+	text-align: right;
 }
 
+#pageContainer {
+	position: relative;
+	min-height: 90vh;
+}
+
+#contentWrap {
+	padding-bottom: 2.5rem; /* Footer height */
+}
+
+#footer {
+	position: absolute;
+	bottom: 0;
+	width: 98.7%;
+	height: 2.5rem; /* Footer height */
+}
 .navBar ul li {
-  display: inline-block;
-  list-style: none;
-  margin: 0 25px;
+	display: inline-block;
+	list-style: none;
+	margin: 0 25px;
 }
 
 .navBar ul li a {
-  text-decoration: none;
-  color: white;
-  padding: 0 10px;
-  position: relative;
+	text-decoration: none;
+	color: white;
+	padding: 0 10px;
+	position: relative;
 }
 
 .navBar ul li a::after {
-  content: "";
-  width: 0;
-  height: 10px;
-  background: white;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  top: -70%;
-  transition: 0.5s;
+	content: "";
+	width: 0;
+	height: 10px;
+	background: white;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	top: -70%;
+	transition: 0.5s;
 }
 
 .navBar ul li a:hover:after {
-  width: 100%;
+	width: 100%;
 }
 
+.iterations {
+	font-weight: bold;
+	text-decoration: underline;
+}
+#doc {
+	color: rgb(8, 119, 215);
+	margin: 0;
+	padding: 1%;
+	font-size: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
 #logo {
-  width: 10%;
-  height: 10%;
+	width: 10%;
+	height: 10%;
 }
 
 .backGround {
-  width: 100%;
-  height: 100vh;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(Images/wallpaperflare.com_wallpaper.jpg);
-  background-size: cover;
-  background-position: center;
-  padding-top: 1rem;
+	width: 100%;
+	height: 78vh;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+		url(Images/wallpaperflare.com_wallpaper.jpg);
+	background-size: cover;
+	background-position: center;
+
+	padding-top: 1rem;
 }
 
+.spaceBG {
+	width: 100%;
+	height: 100vh;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+		url(Images/jeremy-perkins-uhjiu8FjnsQ-unsplash.png);
+
+	padding-top: 1rem;
+	background-repeat: round;
+}
 .banner {
-  width: 100%;
+	width: 100%;
 }
 
 .banner h1 {
-  color: white;
-  font-size: 50px;
-  margin-left: 5%;
-  margin-top: 5%;
-  margin-bottom: 5%;
+	color: white;
+	font-size: 50px;
+	margin-left: 5%;
+	margin-top: 5%;
+	margin-bottom: 5%;
 }
 
 .banner p {
-  color: white;
-  font-size: 20px;
-  margin-left: 5%;
-  margin-top: 1%;
+	color: white;
+	font-size: 20px;
+	margin-left: 5%;
+	margin-top: 1%;
 }
 
 .btn ul li {
-  list-style: none;
+	list-style: none;
 }
 
 .btn ul li a {
-  text-decoration: none;
-  color: rgb(8, 119, 215);
-  font-size: 15px;
+	text-decoration: none;
+	color: rgb(8, 119, 215);
+	font-size: 15px;
 }
 
-.btn button {
+.btn {
+	border-radius: 4px;
+	background-color: rgb(8, 119, 215);
+	border: none;
+	margin-left: 5%;
+	margin-top: 3%;
+	color: #ffffff;
+	text-align: center;
+	font-size: 20px;
+	padding: 15px;
+	width: 220px;
+	transition: all 0.5s;
+	cursor: pointer;
+}
+
+.btn span {
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+	transition: 0.5s;
+}
+
+.btn span:after {
+	content: "\00bb";
+	position: absolute;
+	opacity: 0;
+	top: 0;
+	right: -20px;
+	transition: 0.5s;
+}
+
+.btn:hover span {
+	padding-right: 25px;
+}
+
+.btn:hover span:after {
+	opacity: 1;
+	right: 0;
+}
+/*.btn button {
   padding: 7px 30px;
   margin-left: 5%;
   margin-top: 3%;
@@ -107,257 +181,361 @@
   position: relative;
   overflow: hidden;
   text-decoration: none;
-}
+}*/
 
 .scrollBg {
-  background: #0a1a4b51;
-  width: 500px;
-  margin: 5% auto;
-  border-radius: 10px;
-  float: left;
-  margin-left: 5%;
+	background: #0a1a4b51;
+	width: 600px;
+	margin-top: 3%;
+	margin-left: 5%;
+	border-radius: 10px;
+	float: left;
 }
 
 .scrollDiv {
-  width: 500px;
-  border: 1px solid #ffffff;
-  background: transparent;
-  height: 400px;
-  overflow: hidden;
-  overflow-y: scroll;
-  border-radius: 10px;
+	width: 600px;
+	border: 1px solid #ffffff;
+	background: transparent;
+	height: 400px;
+	overflow: hidden;
+	overflow-y: scroll;
+	border-radius: 10px;
 }
 
 .scrollObject {
-  color: white;
-  font-size: 20px;
-  padding: 5%;
+	color: white;
+	font-size: 20px;
+	padding: 5%;
 }
 
 .scrollObject p {
-  margin: 3% auto;
+	margin: 3% auto;
 }
 
-.scrollObject h1 {
-  color: white;
-  font-size: 30px;
-  padding-bottom: 6%;
-}
 .scrollObject h2 {
-  color: rgb(8, 119, 215);
-  font-size: 22px;
-  padding-bottom: 5%;
-  padding-top: 3%;
+	color: white;
+	font-size: 30px;
+	padding-bottom: 6%;
+}
+.scrollObject h3 {
+	color: rgb(8, 119, 215);
+	font-size: 22px;
+	padding-bottom: 5%;
+	padding-top: 3%;
 }
 
 .scrollBg2 {
-  background: #0a1a4b51;
-  width: 700px;
+	background: #0a1a4b51;
+	width: 600px;
 
-  border-radius: 10px;
-  float: right;
-  margin-right: 5%;
-  margin-top: 2%;
+	border-radius: 10px;
+	float: right;
+	margin-right: 5%;
+	margin-top: 3%;
 }
 
 .scrollDiv2 {
-  width: 700px;
-  border: 1px solid #ffffff;
-  background: transparent;
-  height: 500px;
-  overflow: hidden;
-  overflow-y: scroll;
-  border-radius: 10px;
+	width: 600px;
+	border: 1px solid #ffffff;
+	background: transparent;
+	height: 400px;
+	overflow: hidden;
+	overflow-y: scroll;
+	border-radius: 10px;
 }
 
 .scrollObject2 {
-  color: white;
-  font-size: 20px;
-  padding: 5%;
+	color: white;
+	font-size: 20px;
+	padding: 5%;
 }
 
 .scrollObject2 p {
-  margin: 3% auto;
+	margin: 3% auto;
 }
-.scrollObject2 h1 {
-  color: white;
-  font-size: 30px;
-  padding-bottom: 3%;
-}
-
 .scrollObject2 h2 {
-  color: rgb(8, 119, 215);
-  font-size: 25px;
-  padding-bottom: 5%;
-  padding-top: 3%;
+	color: white;
+	font-size: 30px;
+	padding-bottom: 3%;
 }
 
 .scrollObject2 h3 {
-  color: white;
-  font-size: 21px;
-  padding-bottom: 5%;
-  padding-top: 3%;
+	color: rgb(8, 119, 215);
+	font-size: 25px;
+	padding-bottom: 5%;
+	padding-top: 3%;
 }
 
 .image1 {
-  margin: 5% auto;
-  height: 100%;
-  width: 100%;
+	margin: 5% auto;
+	height: 100%;
+	width: 100%;
 }
 
 .image2 {
-  margin: 5% auto;
-  height: 100%;
-  width: 100%;
+	margin: 5% auto;
+	height: 100%;
+	width: 100%;
 }
 
+.apodIMG {
+	width: 450px;
+	height: 450px;
+	display: none;
+	margin-left: 5%;
+	margin-top: 3%;
+}
+
+#apodVideo {
+	width: 450px;
+	height: 450px;
+	display: none;
+	margin-left: 5%;
+	margin-top: 2%;
+}
+
+.apiText h1 {
+	color: rgb(39, 133, 216);
+	margin: 0;
+	padding: 0;
+	font-size: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 2%;
+	margin-top: -20px;
+}
+
+.apiText p {
+	color: white;
+	margin: 0;
+	padding: 0;
+	font-size: 18px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 1%;
+	margin-top: -20px;
+}
+
+.textBox {
+	display: flex;
+	margin-top: -400px;
+	padding: 2%;
+	color: #ffffff;
+	margin-left: 40%;
+	font-size: 20px;
+	margin-right: 10%;
+}
+
+.bar {
+	fill: steelblue;
+}
+#graphContainer {
+	margin-top: 13%;
+	margin-left: 60%;
+	display: none;
+}
+
+.apodText {
+	color: #ffffff;
+}
+.axisLeft {
+	stroke: #ffffff;
+}
+
+#graphContainer p {
+	color: #ffffff;
+}
+.svgColour {
+	color: white;
+	background-color: #ffffff;
+}
+#searchDate {
+	background-color: rgba(13, 80, 139, 0.633);
+	color: white;
+	font-size: 15.5px;
+	border-radius: 5%;
+}
+#search {
+	background-color: rgba(13, 80, 139, 0.734);
+	color: white;
+	font-size: 15.3px;
+	border-radius: 5%;
+}
+
+#loader {
+	display: none;
+	color: #fff;
+	font-size: 20px;
+	position: fixed;
+	margin-top: 30%;
+}
+footer {
+	background-color: rgba(13, 80, 139, 0.442);
+	color: #fff;
+	padding: 10px;
+	text-align: center;
+	height: 60px;
+}
+
+#graphContainer {
+	stroke: white;
+}
+.searchBar {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
 @media screen and (max-width: 600px) {
-  .navBar {
-    margin: 30px auto;
-    display: flex;
-    align-items: center;
-    font-size: 15px;
-  }
+	.navBar {
+		margin: 30px auto;
+		display: flex;
+		align-items: center;
+		font-size: 15px;
+	}
 
-  .navBar ul {
-    flex: 1;
-    text-align: right;
-  }
+	.navBar ul {
+		flex: 1;
+		text-align: right;
+	}
 
-  .navBar ul li {
-    display: inline-block;
-    list-style: none;
-    margin: -5px;
-  }
+	.navBar ul li {
+		display: inline-block;
+		list-style: none;
+		margin: -5px;
+	}
 
-  .navBar ul li a {
-    text-decoration: none;
-    color: white;
-    padding: 0 10px;
-    position: relative;
-  }
+	.navBar ul li a {
+		text-decoration: none;
+		color: white;
+		padding: 0 10px;
+		position: relative;
+	}
 
-  .banner h1 {
-    color: white;
-    font-size: 50px;
-    margin-left: 5%;
-    margin-top: 20%;
-    margin-bottom: 5%;
-  }
+	.banner h1 {
+		color: white;
+		font-size: 50px;
+		margin-left: 5%;
+		margin-top: 20%;
+		margin-bottom: 5%;
+	}
 
-  .btn button {
-    padding: 7px 30px;
-    margin-left: 5%;
-    margin-top: 10%;
-    outline: none;
-    border: 1px solid rgb(8, 119, 215);
-    border-radius: 20px;
-    cursor: pointer;
-    color: white;
-    background: transparent;
-    position: relative;
-    overflow: hidden;
-    text-decoration: none;
-  }
+	.btn button {
+		padding: 7px 30px;
+		margin-left: 5%;
+		margin-top: 10%;
+		outline: none;
+		border: 1px solid rgb(8, 119, 215);
+		border-radius: 20px;
+		cursor: pointer;
+		color: white;
+		background: transparent;
+		position: relative;
+		overflow: hidden;
+		text-decoration: none;
+	}
 
-  .scrollBg {
-    background: #0a1a4b51;
-    width: 340px;
-    margin: 5% auto;
-    border-radius: 10px;
-    float: left;
-    margin-left: 5%;
-  }
+	.scrollBg {
+		background: #0a1a4b51;
+		width: 340px;
+		margin: 5% auto;
+		border-radius: 10px;
+		float: left;
+		margin-left: 5%;
+	}
 
-  .scrollDiv {
-    width: 340px;
-    border: 1px solid #ffffff;
-    background: transparent;
-    height: 220px;
-    overflow: hidden;
-    overflow-y: scroll;
-    border-radius: 10px;
-  }
+	.scrollDiv {
+		width: 340px;
+		border: 1px solid #ffffff;
+		background: transparent;
+		height: 220px;
+		overflow: hidden;
+		overflow-y: scroll;
+		border-radius: 10px;
+	}
 
-  .scrollBg2 {
-    background: #0a1a4b51;
-    width: 350px;
+	.scrollBg2 {
+		background: #0a1a4b51;
+		width: 350px;
 
-    border-radius: 10px;
-    float: right;
-    margin-right: 3%;
-    margin-top: 2%;
-  }
+		border-radius: 10px;
+		float: right;
+		margin-right: 3%;
+		margin-top: 2%;
+	}
 
-  .scrollDiv2 {
-    width: 350px;
-    border: 1px solid #ffffff;
-    background: transparent;
-    height: 300px;
-    overflow: hidden;
-    overflow-y: scroll;
-    border-radius: 10px;
-  }
+	.scrollDiv2 {
+		width: 350px;
+		border: 1px solid #ffffff;
+		background: transparent;
+		height: 300px;
+		overflow: hidden;
+		overflow-y: scroll;
+		border-radius: 10px;
+	}
 
-  .scrollObject {
-    color: white;
-    font-size: 15px;
-    padding: 5%;
-  }
+	.scrollObject {
+		color: white;
+		font-size: 15px;
+		padding: 5%;
+	}
 
-  .scrollObject p {
-    margin: 3% auto;
-  }
+	.scrollObject p {
+		margin: 3% auto;
+	}
 
-  .scrollObject h1 {
-    color: white;
-    font-size: 20px;
-    padding-bottom: 6%;
-  }
-  .scrollObject h2 {
-    color: rgb(8, 119, 215);
-    font-size: 22px;
-    padding-bottom: 5%;
-    padding-top: 3%;
-  }
-  .scrollObject2 {
-    color: white;
-    font-size: 15px;
-    padding: 5%;
-  }
+	.scrollObject h1 {
+		color: white;
+		font-size: 20px;
+		padding-bottom: 6%;
+	}
+	.scrollObject h2 {
+		color: rgb(8, 119, 215);
+		font-size: 22px;
+		padding-bottom: 5%;
+		padding-top: 3%;
+	}
+	.scrollObject2 {
+		color: white;
+		font-size: 15px;
+		padding: 5%;
+	}
 
-  .scrollObject2 p {
-    margin: 3% auto;
-  }
-  .scrollObject2 h1 {
-    color: white;
-    font-size: 20px;
-    padding-bottom: 3%;
-  }
+	.scrollObject2 p {
+		margin: 3% auto;
+	}
+	.scrollObject2 h1 {
+		color: white;
+		font-size: 20px;
+		padding-bottom: 3%;
+	}
 
-  .scrollObject2 h2 {
-    color: rgb(8, 119, 215);
-    font-size: 18px;
-    padding-bottom: 5%;
-    padding-top: 3%;
-  }
+	.scrollObject2 h2 {
+		color: rgb(8, 119, 215);
+		font-size: 18px;
+		padding-bottom: 5%;
+		padding-top: 3%;
+	}
 
-  .scrollObject2 h3 {
-    color: white;
-    font-size: 17px;
-    padding-bottom: 5%;
-    padding-top: 3%;
-  }
+	.scrollObject2 h3 {
+		color: white;
+		font-size: 17px;
+		padding-bottom: 5%;
+		padding-top: 3%;
+	}
 
-  .image1 {
-    margin: 5% auto;
-    height: 100%;
-    width: 100%;
-  }
+	.image1 {
+		margin: 5% auto;
+		height: 100%;
+		width: 100%;
+	}
 
-  .image2 {
-    margin: 5% auto;
-    height: 100%;
-    width: 100%;
-  }
+	.image2 {
+		margin: 5% auto;
+		height: 100%;
+		width: 100%;
+	}
 }

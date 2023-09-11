@@ -8,16 +8,17 @@
     <meta name="keywords" content="HTML, CSS, JavaScript" />
     <meta name="author" content="Tamara Bogdanov" />
     <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
     <link
       href="https://fonts.googleapis.com/css?family=Dosis&display=swap"
       rel="stylesheet"
     />
+    <script src="https://d3js.org/d3.v4.js"></script>
   </head>
 
-  <body>
-    
-    <section class="backGround">
-      <div class="navigation">
+
+<body class= "spaceBG">
+<nav>
         <nav class="navBar">
           <img
             id="logo"
@@ -30,9 +31,44 @@
             <li><a href="art.html">Art</a></li>
             <li><a href="documents.html">Documents</a></li>
           </ul>
-        
-      </header>
+</nav>
+
+ <main>
+      <span class="apiText">
+      <h1>Nasa live API and Chart</h1>
+      <p>
+        Pick any date below to recieve the daily Astronomy picture and description from Nasa's API..
+      </p>
+      <p>as well as a chart showcasing how many Asteriods were near earth misses..
+      </p>
+        <p>
+          all for that selected date!
+        </p>
+      <div id="loader">
+        Busy Loading Chart, Please Wait...
       </div>
-    </section>
-  </body>
+      <section class="searchBar">        
+        <input id="searchDate" type="date" placeholders = "Enter">
+        <button id="search" onclick="fetchAPOD()">
+          Search
+        </button>
+      </section>
+      
+    
+    <div>
+      <img class="apodIMG" id="apod-image" src="" alt="NASA APOD">
+        <iframe src="" id="apodVideo"  frameborder="0"></iframe>
+       <section class="textBox"> 
+        <p style="display: none;"  id="apod-description"></p>
+       </section>
+    </div>
+
+    <div id="graphContainer">
+      <svg  width="600" height="500"></svg>   
+    </div>
+</main>
+    
+</body>
+
+
 </html>

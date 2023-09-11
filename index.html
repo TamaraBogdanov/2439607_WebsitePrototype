@@ -14,46 +14,51 @@
     />
   </head>
 
-  <body>
-    
-    <section class="backGround">
-      <div class="navigation">
+  <body class="backGround">
+    <section id="pageContainer">
+      <div id="contentWrap">
+     
         <nav class="navBar">
-
-
-          
           <img 
             id="logo" 
            src="Images/full-moon-moon-png-989c668440f10a9793e9e486671216a2.png" 
-            alt="Moon Logo"
-          />
+            alt="Moon Logo" />
           <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="datavisuals.html">Data Visuals</a></li>
             <li><a href="art.html">Art</a></li>
             <li><a href="documents.html">Documents</a></li>
           </ul>
-        
         </nav>
      
-      </div>
-
-      <section class="banner">
+   
+      <main>
+        <section class="banner">
         <h1>Data Visualization</h1>
-        <p>Here will be displayed</p>
-        <p>how to visualize and display</p>
-        <p>data effectively</p>
+        <p>Travel deeper into the galaxy</p>
+        <p>to discover the wonders of data visualization</p>
+        <p> using Nasa's API's!</p>
 
-        <div class="btn">
+        <!--<div class="btn">
           <ul>
             <li><button type="button">
-              <a href="datavisuals.html">Learn More </a></li>
+              <a href="datavisuals.html">Travel into the galaxy! </a></li>//
 
             
-            </button>
+            </button>-->
+
+            <button  onclick = "window.location.href='datavisuals.html';"
+            class="btn"><span>Travel into the Galaxy! </span></button>
           </ul>
         </div>
       </section>
-    </section>
+    </main>
+  
+
+    <footer id="footer">
+     <p>&copy; 2023 Tamara's Website. All Rights Reserved.</p>
+  </footer>
+
+
   </body>
 </html>
