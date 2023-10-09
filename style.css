@@ -420,6 +420,10 @@
 .div1 {
 	height: 55%;
 }
+
+.div2 {
+	height: 20%;
+}
 #graphText1 h2 {
 	color: rgb(87, 39, 172);
 	text-align: center;
@@ -592,6 +596,13 @@ code {
 	margin: auto;
 	text-align: center;
 }
+
+.accordionItemBodyContent ul li {
+	font-size: 20px;
+	padding: 1%;
+	color: rgb(165, 39, 172);
+}
+
 .iterations {
 	font-weight: bold;
 	text-decoration: underline;
@@ -645,7 +656,7 @@ code {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	margin: 20px 0px;
+
 	flex-wrap: wrap;
 }
 
