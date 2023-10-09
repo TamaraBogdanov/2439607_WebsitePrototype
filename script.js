@@ -65,7 +65,9 @@ function showGraph(toDate) {
 	const loader = document.getElementById("loader");
 	const graphContainer = document.getElementById("graphContainer");
 	const graphText = document.getElementById("graphText");
+	const graphText1 = document.getElementById("graphText1");
 	graphText.style.display = "none";
+	graphText1.style.display = "none";
 	graphContainer.style.display = "none";
 	loader.style.display = "block";
 	let fromDate = new Date(toDate);
@@ -89,7 +91,7 @@ function showGraph(toDate) {
 
 			///Set graph margins and dimensions
 			var svg = d3.select("#barsvg"),
-				margin = 200,
+				margin = 150,
 				width = svg.attr("width") - margin,
 				height = svg.attr("height") - margin;
 			svg.selectAll("*").remove();
@@ -98,8 +100,9 @@ function showGraph(toDate) {
 				.attr("transform", "translate(180,0)")
 				.attr("x", 50)
 				.attr("y", 50)
-				.attr("font-size", "16px")
-				.text("Earth near misses");
+				.attr("font-size", "20px")
+				.attr("font-color", "white")
+				.text("Bar Graph showing the Near Earth Misses");
 
 			var xScale = d3.scaleBand().range([0, width]).padding(0.4);
 
@@ -153,6 +156,7 @@ function showGraph(toDate) {
 					return height - yScale(d.value);
 				});
 			graphText.style.display = "block";
+			graphText1.style.display = "block";
 			graphContainer.style.display = "block";
 			loader.style.display = "none";
 		})
@@ -169,7 +173,7 @@ function showScatterGraph(data) {
 	var totalHeight = 600;
 
 	var margin = {
-		top: 20,
+		top: 50,
 		left: 50,
 		bottom: 30,
 		right: 30,
@@ -187,9 +191,9 @@ function showScatterGraph(data) {
 		var date = element[0];
 		element[1].forEach((nmo) => {
 			var item = {
-				radius: nmo.absolute_magnitude_h * 0.2,
+				radius: nmo.absolute_magnitude_h * 10,
 				cx: parseFloat(nmo.close_approach_data[0].miss_distance.kilometers),
-				cy: nmo.absolute_magnitude_h * 0.2,
+				cy: nmo.absolute_magnitude_h * 10,
 			};
 			theData.push(item);
 		});
@@ -408,6 +412,15 @@ function showScatterGraph(data) {
 			setCrosshair(x, y);
 		});
 
+	//Graph Heading
+	svg
+		.append("text")
+		.attr("x", totalWidth / 2)
+		.attr("y", 20)
+		.attr("text-anchor", "middle")
+		.text(
+			"Scatter Plot showing Asteroid Size in meters (Y) and its Distance from earth (X) "
+		);
 	// Crosshair data
 
 	function setCrosshair(x, y) {

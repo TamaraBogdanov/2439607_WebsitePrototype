@@ -63,19 +63,23 @@
       </section>
       
     
-    <section>
+   
       <img class="apodIMG" id="apodImage" src="" alt="NASA APOD">
         <iframe src="" id="apodVideo"  frameborder="0"></iframe>
        <span class="textBox"> 
+        <h2>APOD </h2>
         <p id="apodDescription"></p>
        </span>
-    </section>
+    
 
     <section id="graphContainer">
+      <h2>Static and Interactive Charts</h2>
       <svg  width="600" height="500" id="barsvg"></svg>
     </section>
     
-    <article id="graphText"><p>Depicting the last 7 days,this bar graph shows how many Asteroids were "near misses" from Earth. </p> 
+    <article id="graphText">
+      <h2>Static Graph</h2>
+      <p>Depicting the last 7 days,this static Bar graph shows how many Asteroids were "near misses" from Earth. </p> 
       <p> The x axis displays the last 7 days from the date you have seleted above...</p>
       <p>and the y axis displays the amount of Asteroids that were near misses for those days.</p>
       <p>All information has been gathered from the live Nasa API. </p>
@@ -83,10 +87,20 @@
 
 
     <section id="scatterContainer">
+     
       <svg id="scatterplot"></svg>
     </section>
 
+    <article id="graphText1">
+      <h2>Interactive Graph</h2>
+      <p>This interactive Scatter plot shows the asteroid size and its distance from earth.  </p> 
+      <p> from the selected date's last 7 days.</p>
+      <p>The X axis shows us the asteroid's distance from Earth in kilometers. </p>
+      <p>The Y axis shows us the asteroids size in meters </p>
+      <p>All of this information has been gatehered from the live Nasa API</p>
+    </article>
 
+    <div class="div1"></div>
 </main>
 <footer id="footer">
   <p>&copy; 2023 Tamara's Website. All Rights Reserved.</p>
