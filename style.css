@@ -356,7 +356,7 @@ footer {
 }
 .scrollBg {
 	background: #1741be51;
-	width: 40%;
+	width: 39.5%;
 	margin-top: 3%;
 	margin-left: 8%;
 	border-radius: 20px;
@@ -387,7 +387,7 @@ footer {
 
 .scrollBg2 {
 	background: #1741be51;
-	width: 40%;
+	width: 39.5%;
 	margin-top: 8%;
 	margin-right: 8%;
 	border-radius: 20px;
@@ -878,13 +878,6 @@ code {
 		position: relative;
 	}
 
-	.scrollBg {
-		background: #0a1a4b51;
-		width: 1000;
-		margin: 5% auto;
-		border-radius: 10px;
-		margin-left: 5%;
-	}
 	.blogBG {
 		background: #112f8896;
 	}
@@ -895,66 +888,115 @@ code {
 		padding: 5%;
 	}
 
-	.scrollBg2 {
-		background: #0a1a4b51;
-		width: 350px;
-		border-radius: 10px;
-		float: right;
-		margin-right: 3%;
-		margin-top: 2%;
-	}
-
 	.scrollObject {
 		color: white;
 		font-size: 15px;
 		padding: 5%;
-		background: rgba(8, 118, 215, 0.395);
 	}
 
-	.scrollObject p {
-		margin: 3% auto;
-	}
-
-	.scrollObject h1 {
-		color: rgb(8, 119, 215);
-		font-size: 50px;
-		margin-left: 5%;
-		margin-top: 20%;
-		margin-bottom: 5%;
-	}
 	.scrollObject h2 {
+		color: white;
+		font-size: 20px;
+		padding-bottom: 6%;
+	}
+	.scrollObject h3 {
 		color: rgb(8, 119, 215);
 		font-size: 22px;
 		padding-bottom: 5%;
 		padding-top: 3%;
 	}
+	.scrollBg {
+		background: #1741be51;
+		width: 87%;
+		margin-top: 3%;
+		margin-left: 8%;
+		border-radius: 20px;
+		float: left;
+	}
+	.scrollBg2 {
+		background: #1741be51;
+		width: 87%;
+		margin-top: 3%;
+		margin-left: 8%;
+		border-radius: 20px;
+		float: left;
+	}
+
+	.scrollBg3 {
+		background: #1741be51;
+		width: 100%;
+		margin-top: 120%;
+		margin-right: 5%;
+		border-radius: 20px;
+	}
+
+	.scrollObject3 h2 {
+		color: white;
+		font-size: 25px;
+		text-align: left;
+		padding-bottom: 5%;
+	}
+
+	.scrollObject3 p {
+		padding: 0.5%;
+	}
+	.scrollDiv {
+		width: 320px;
+		border: 1px solid #ffffff;
+		background: transparent;
+		height: 400px;
+		overflow: hidden;
+		overflow-y: scroll;
+		border-radius: 10px;
+	}
+	.scrollDiv2 {
+		width: 320px;
+		border: 1px solid #ffffff;
+		background: transparent;
+		height: 400px;
+		overflow: hidden;
+		overflow-y: scroll;
+		border-radius: 10px;
+	}
+
 	.scrollObject2 {
 		color: white;
 		font-size: 15px;
 		padding: 5%;
 	}
 
+	.scrollObject3 {
+		color: white;
+		font-size: 15px;
+		padding: 2%;
+	}
 	.scrollObject2 p {
 		margin: 3% auto;
 	}
-	.scrollObject2 h1 {
+	.scrollObject2 h2 {
 		color: white;
 		font-size: 20px;
 		padding-bottom: 3%;
 	}
 
-	.scrollObject2 h2 {
+	.scrollObject2 h3 {
 		color: rgb(8, 119, 215);
-		font-size: 18px;
+		font-size: 25px;
 		padding-bottom: 5%;
 		padding-top: 3%;
 	}
 
-	.scrollObject2 h3 {
-		color: white;
-		font-size: 17px;
-		padding-bottom: 5%;
-		padding-top: 3%;
+	.blogIMGs {
+		display: none;
+	}
+
+	.blogIMGs2 {
+		display: none;
+	}
+
+	.blogIMGFlex {
+		display: flex;
+		gap: 10%;
 	}
 
 	.image1 {
