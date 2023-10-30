@@ -28,7 +28,6 @@
 }
 
 #footer {
-	position: fixed;
 	bottom: 0;
 	width: 98.7%;
 	height: 2.5rem; /* Footer height */
@@ -656,21 +655,34 @@ line {
 /*Art Data Section */
 
 .artText {
-	margin-top: 2%;
-	margin-bottom: 5%;
+	padding: 2%;
+}
+.artText h1 {
+	color: rgb(39, 133, 216);
+	margin: 0;
 	padding: 0;
+	font-size: 30px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	padding: 1%;
+	margin-top: -10px;
+	margin-bottom: 2%;
 }
 
-.artText h1 {
-	color: rgb(39, 133, 216);
-	font-size: 30px;
+.artText p {
+	color: white;
+	margin: 0;
+	padding: 2%;
+	font-size: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 1%;
 }
 
 #artContainer {
-	margin-left: 35px;
+	margin-left: 40px;
 }
 
 .div2 {
@@ -954,5 +966,300 @@ code {
 		margin: 5% auto;
 		height: 100%;
 		width: 100%;
+	}
+
+	/* Home Page */
+
+	.banner {
+		width: 100%;
+	}
+
+	.banner h1 {
+		color: rgb(8, 119, 215);
+		font-size: 30px;
+		margin-left: 5%;
+		margin-top: 20%;
+		margin-bottom: 10%;
+	}
+
+	.banner p {
+		color: white;
+		font-size: 18px;
+		margin-left: 5%;
+		margin-top: 1%;
+	}
+
+	.btn button {
+		padding: 7px 30px;
+		margin-left: 5%;
+		margin-top: 20%;
+		outline: none;
+		border: 1px solid rgb(8, 119, 215);
+		border-radius: 20px;
+		cursor: pointer;
+		color: white;
+		background: transparent;
+		position: relative;
+		overflow: hidden;
+		text-decoration: none;
+	}
+
+	.btn {
+		border-radius: 4px;
+		background-color: rgb(8, 119, 215);
+		border: none;
+		margin-left: 5%;
+		margin-top: 10%;
+		color: #ffffff;
+		text-align: center;
+		font-size: 18px;
+		padding: 15px;
+		width: 220px;
+		transition: all 0.5s;
+		cursor: pointer;
+	}
+
+	/*Data Section*/
+	.apiText h1 {
+		color: rgb(39, 133, 216);
+		margin: 0;
+		padding: 0;
+		font-size: 20px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 2%;
+		margin-top: -10px;
+	}
+
+	.apiText p {
+		color: white;
+		margin: 0;
+		padding: 0;
+		font-size: 15px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 1%;
+		margin-top: -10%;
+	}
+
+	.apodIMG {
+		width: 320px;
+		height: 450px;
+		display: none;
+		margin-left: 8%;
+		margin-top: 30%;
+	}
+
+	#apodVideo {
+		width: 450px;
+		height: 450px;
+		display: none;
+		margin-left: 5%;
+		margin-top: 2%;
+	}
+
+	.apodText {
+		color: #ffffff;
+	}
+
+	.apiText h1 {
+		color: rgb(39, 133, 216);
+		margin: 0;
+		padding: 0;
+		font-size: 20px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 1%;
+	}
+
+	.apiText p {
+		color: white;
+		margin: 0;
+		padding: 0;
+		font-size: 18px;
+		padding: 1%;
+		margin-top: 10%;
+		margin-left: 5%;
+	}
+
+	.textBox {
+		padding: 1%;
+		color: #ffffff;
+		font-size: 20px;
+	}
+
+	.textBox h2 {
+		color: rgb(87, 39, 172);
+		margin-top: -60%;
+		margin-left: 5%;
+	}
+
+	.textBox p {
+		margin-top: 250%;
+		margin-left: -110%;
+	}
+
+	#graphContainer {
+		display: none;
+		font-size: 20px;
+		font-weight: 900;
+	}
+
+	#graphContainer h2 {
+		color: rgb(39, 133, 216);
+		margin-left: -180px;
+		margin-bottom: 10%;
+		margin-top: 15%;
+	}
+
+	#graphText {
+		color: #ffffff;
+		padding: 1%;
+		display: none;
+		margin-top: 10%;
+		display: flex;
+	}
+
+	#graphText p {
+		font-size: 15px;
+		margin-left: 10%;
+		padding: 2%;
+		justify-content: center;
+	}
+
+	#graphText h2 {
+		color: rgb(87, 39, 172);
+		text-align: center;
+		padding: 1%;
+		font-size: 30px;
+		justify-content: center;
+	}
+	#graphText1 {
+		color: #ffffff;
+		display: none;
+		margin-top: 10%;
+		margin-left: 5%;
+	}
+	#graphText1 h2 {
+		color: rgb(87, 39, 172);
+		text-align: center;
+		font-size: 20px;
+	}
+
+	#graphText1 p {
+		font-size: 15px;
+	}
+
+	/*Footer*/
+
+	#footer {
+		bottom: 0;
+		width: 95%;
+		height: 2.5rem; /* Footer height */
+		color: white;
+		background-color: rgba(7, 73, 131, 0.856);
+	}
+
+	footer {
+		background-color: rgba(13, 80, 139, 0.442);
+		color: #fff;
+		padding: 10px;
+		text-align: center;
+		height: 60px;
+	}
+
+	/*Design Doc*/
+	.mainBody {
+		display: grid;
+		grid-template-columns: minmax(10px, auto) 1fr;
+		grid-template-areas: "navbar mainContent";
+	}
+
+	#leftNavbar {
+		display: none;
+	}
+
+	#leftNavbar a {
+		display: none;
+	}
+
+	#leftNavbar a:hover {
+		border: 2px solid rgb(87, 39, 172);
+	}
+
+	#mainDoc {
+		grid-area: mainContent;
+		color: white;
+	}
+
+	.mainSection h2 {
+		font-size: 25px;
+		padding: 2%;
+		color: rgb(109, 64, 186);
+		margin-top: 10%;
+	}
+
+	.mainSection p {
+		padding: 1%;
+		font-size: 15px;
+		margin-right: 4%;
+	}
+
+	.mainSection h3 {
+		font-size: 20px;
+		padding: 2%;
+		margin-top: 3%;
+		color: rgb(174, 68, 198);
+	}
+	.designDocImg {
+		width: 20%;
+		height: 80%;
+		float: right;
+		margin-right: 10%;
+		display: flex;
+	}
+
+	.designDocImgCenter {
+		width: 20%;
+		height: 80%;
+		margin-left: 35%;
+	}
+
+	/* Art Section */
+
+	#artContainer {
+		margin-left: 5%;
+		margin-right: 5%;
+		margin-top: 10%;
+	}
+
+	.artText {
+		padding: 3%;
+	}
+	.artText h1 {
+		color: rgb(39, 133, 216);
+		margin: 0;
+		padding: 0;
+		font-size: 20px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 1%;
+		margin-top: -10px;
+		margin-bottom: 5%;
+	}
+
+	.artText p {
+		color: white;
+		margin: 0;
+		padding: 2%;
+		font-size: 15px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 1%;
 	}
 }
