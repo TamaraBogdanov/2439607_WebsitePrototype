@@ -279,6 +279,13 @@ footer {
 	margin-left: 10%;
 }
 
+.dDocImg {
+	width: 20%;
+	height: 20%;
+	margin-bottom: 4%;
+	margin-top: 7%;
+}
+
 .blogIMGFlex {
 	display: flex;
 	gap: 10%;
