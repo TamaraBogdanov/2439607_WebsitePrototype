@@ -3,7 +3,7 @@
 	padding: 0;
 	font-family: "Dosis", sans-serif;
 }
-
+/*Nav/ Footer/ Background on every page*/
 .navBar {
 	margin: 30px auto;
 	display: flex;
@@ -98,8 +98,26 @@
 	padding-top: 1rem;
 	background-repeat: round;
 }
+
+footer {
+	background-color: rgba(13, 80, 139, 0.442);
+	color: #fff;
+	padding: 10px;
+	text-align: center;
+	height: 60px;
+}
+
+/* Home page button and banner*/
 .banner {
 	width: 100%;
+}
+
+.banner h1 {
+	color: rgb(8, 119, 215);
+	font-size: 50px;
+	margin-left: 5%;
+	margin-top: 20%;
+	margin-bottom: 5%;
 }
 
 .banner h1 {
@@ -115,6 +133,21 @@
 	font-size: 20px;
 	margin-left: 5%;
 	margin-top: 1%;
+}
+
+.btn button {
+	padding: 7px 30px;
+	margin-left: 5%;
+	margin-top: 10%;
+	outline: none;
+	border: 1px solid rgb(8, 119, 215);
+	border-radius: 20px;
+	cursor: pointer;
+	color: white;
+	background: transparent;
+	position: relative;
+	overflow: hidden;
+	text-decoration: none;
 }
 
 .btn ul li {
@@ -167,6 +200,71 @@
 	right: 0;
 }
 
+.btn1 button {
+	padding: 7px 30px;
+
+	outline: none;
+	border: 1px solid rgb(8, 119, 215);
+	border-radius: 20px;
+	cursor: pointer;
+	color: white;
+	background: transparent;
+	position: relative;
+	overflow: hidden;
+	text-decoration: none;
+}
+
+.btn1 ul li {
+	list-style: none;
+}
+
+.btn1 ul li a {
+	text-decoration: none;
+	color: rgb(8, 119, 215);
+	font-size: 15px;
+}
+
+.btn1 {
+	border-radius: 4px;
+	background-color: rgb(8, 119, 215);
+	border: none;
+	margin-left: 5%;
+	margin-top: 3%;
+	color: #ffffff;
+	text-align: center;
+	font-size: 15px;
+	padding: 15px;
+	width: 150px;
+	transition: all 0.5s;
+	cursor: pointer;
+}
+
+.btn1 span {
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+	transition: 0.5s;
+}
+
+.btn1 span:after {
+	content: "\00bb";
+	position: absolute;
+	opacity: 0;
+	top: 0;
+	right: -20px;
+	transition: 0.5s;
+}
+
+.btn1:hover span {
+	padding-right: 25px;
+}
+
+.btn1:hover span:after {
+	opacity: 1;
+	right: 0;
+}
+
+/*Blog posts images and scroll boxes*/
 .blogIMGs {
 	width: 20%;
 	height: 80%;
@@ -179,13 +277,84 @@
 	height: 80%;
 	float: left;
 	margin-top: 10%;
-	margin-left: 8%;
+	margin-left: 10%;
 }
+
 .blogIMGFlex {
 	display: flex;
 	gap: 10%;
 }
+#myBlog {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	padding: 20px;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
 
+.blogHeading {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	margin-top: -1%;
+}
+
+.blogHeading h1 {
+	font-size: 30px;
+	color: rgb(8, 119, 215);
+	font-weight: 600;
+}
+
+.blogContainer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.blogBox {
+	width: 320px;
+	background-color: #ffffff;
+	border: 1px solid #ececec;
+	margin: 10px;
+}
+
+.blogIMG {
+	width: 100%;
+	height: auto;
+}
+
+.blogIMG img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
+}
+
+.blogText {
+	padding: 30px;
+	display: flex;
+	flex-direction: column;
+}
+
+.blogText h2 {
+	text-decoration: none;
+	font-size: 25px;
+	font-weight: 500;
+	color: rgb(24, 151, 235);
+}
+
+.blogText p {
+	font-size: 15px;
+	display: -webkit-box;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	margin: 20px 0px;
+}
 .scrollBg {
 	background: #1741be51;
 	width: 40%;
@@ -290,6 +459,8 @@
 	padding-top: 3%;
 }
 
+/*Data Visuals Graphs, APIs*/
+
 .apodIMG {
 	width: 450px;
 	height: 450px;
@@ -304,6 +475,10 @@
 	display: none;
 	margin-left: 5%;
 	margin-top: 2%;
+}
+
+.apodText {
+	color: #ffffff;
 }
 
 .apiText h1 {
@@ -377,25 +552,6 @@
 	margin-left: 3%;
 	font-size: 25px;
 }
-/*Art Data Section */
-
-.artText {
-	margin-top: 10%;
-	padding: 0;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
-.artText h1 {
-	color: #fff;
-	font-size: 40px;
-}
-
-#artContainer {
-	margin-left: 90px;
-}
-
 #graphText {
 	color: #ffffff;
 	padding: 3%;
@@ -421,14 +577,6 @@
 	margin-top: -33%;
 	margin-left: 50%;
 }
-
-.div1 {
-	height: 55%;
-}
-
-.div2 {
-	height: 20%;
-}
 #graphText1 h2 {
 	color: rgb(87, 39, 172);
 	text-align: center;
@@ -439,9 +587,7 @@
 #graphText1 p {
 	font-size: 20px;
 }
-.apodText {
-	color: #ffffff;
-}
+
 .axisLeft {
 	stroke: #ffffff;
 }
@@ -462,22 +608,6 @@
 	font-size: 15.3px;
 	border-radius: 5%;
 }
-
-#loader {
-	display: none;
-	color: #fff;
-	font-size: 20px;
-	position: fixed;
-	margin-top: 40%;
-}
-footer {
-	background-color: rgba(13, 80, 139, 0.442);
-	color: #fff;
-	padding: 10px;
-	text-align: center;
-	height: 60px;
-}
-
 .searchBar {
 	margin: 0;
 	padding: 0;
@@ -486,6 +616,68 @@ footer {
 	align-items: center;
 }
 
+#loader {
+	display: none;
+	color: #fff;
+	font-size: 20px;
+	position: fixed;
+	margin-top: 40%;
+}
+
+.graphBG {
+	background-color: #32333b;
+	overflow: hidden;
+}
+
+.label {
+	fill: #fff;
+	font-family: sans-serif;
+	font-size: 10px;
+}
+
+text {
+	fill: #777;
+}
+
+line {
+	stroke: #777;
+}
+
+.focusLine {
+	shape-rendering: crispEdges;
+	stroke: #777;
+	stroke-width: 1.1;
+	stroke-linecap: butt;
+}
+
+.div1 {
+	height: 55%;
+}
+/*Art Data Section */
+
+.artText {
+	margin-top: 2%;
+	margin-bottom: 5%;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.artText h1 {
+	color: rgb(39, 133, 216);
+	font-size: 30px;
+}
+
+#artContainer {
+	margin-left: 35px;
+}
+
+.div2 {
+	height: 20%;
+}
+
+/* Design Doc code and accordion*/
 .mainBody {
 	display: grid;
 	grid-template-columns: minmax(300px, auto) 1fr;
@@ -538,7 +730,19 @@ footer {
 	margin-top: 3%;
 	color: rgb(174, 68, 198);
 }
+.designDocImg {
+	width: 15%;
+	height: 80%;
+	float: right;
+	margin-right: 10%;
+	display: flex;
+}
 
+.designDocImgCenter {
+	width: 15%;
+	height: 80%;
+	margin-left: 35%;
+}
 header {
 	font-size: 1.5rem;
 	font-weight: bold;
@@ -635,120 +839,6 @@ code {
 	float: right;
 }
 
-#myBlog {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
-	padding: 20px;
-	border-bottom: 1px solid rgba(0, 0, 0, 0.05);
-}
-
-.blogHeading {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
-}
-
-.blogHeading h1 {
-	font-size: 30px;
-	color: rgb(8, 119, 215);
-	font-weight: 600;
-}
-
-.blogContainer {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-
-	flex-wrap: wrap;
-}
-
-.blogBox {
-	width: 350px;
-	background-color: #ffffff;
-	border: 1px solid #ececec;
-	margin: 20px;
-}
-
-.blogIMG {
-	width: 100%;
-	height: auto;
-}
-
-.blogIMG img {
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
-	object-position: center;
-}
-
-.blogText {
-	padding: 30px;
-	display: flex;
-	flex-direction: column;
-}
-
-.blogText span {
-	color: rgb(87, 39, 172);
-	font-size: 20px;
-}
-
-.blogText h2 {
-	text-decoration: none;
-	font-size: 25px;
-	font-weight: 500;
-	color: rgb(24, 151, 235);
-}
-
-.blogText a {
-	color: black;
-	text-decoration: none;
-	font-weight: 500;
-}
-
-.blogText a:hover {
-	color: rgb(24, 205, 237);
-	transition: all ease 0.3s;
-}
-.blogText p {
-	font-size: 15px;
-	display: -webkit-box;
-	-webkit-line-clamp: 3;
-	-webkit-box-orient: vertical;
-	overflow: hidden;
-	text-overflow: ellipsis;
-	margin: 20px 0px;
-}
-
-.graphBG {
-	background-color: #32333b;
-	overflow: hidden;
-}
-
-.label {
-	fill: #fff;
-	font-family: sans-serif;
-	font-size: 10px;
-}
-
-text {
-	fill: #777;
-}
-
-.domain,
-line {
-	stroke: #777;
-}
-
-.focusLine {
-	shape-rendering: crispEdges;
-	stroke: #777;
-	stroke-width: 1.1;
-	stroke-linecap: butt;
-}
-
 @media screen and (max-width: 600px) {
 	.navBar {
 		margin: 30px auto;
@@ -773,29 +863,6 @@ line {
 		color: white;
 		padding: 0 10px;
 		position: relative;
-	}
-
-	.banner h1 {
-		color: rgb(8, 119, 215);
-		font-size: 50px;
-		margin-left: 5%;
-		margin-top: 20%;
-		margin-bottom: 5%;
-	}
-
-	.btn button {
-		padding: 7px 30px;
-		margin-left: 5%;
-		margin-top: 10%;
-		outline: none;
-		border: 1px solid rgb(8, 119, 215);
-		border-radius: 20px;
-		cursor: pointer;
-		color: white;
-		background: transparent;
-		position: relative;
-		overflow: hidden;
-		text-decoration: none;
 	}
 
 	.scrollBg {

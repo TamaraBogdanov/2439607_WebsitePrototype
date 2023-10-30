@@ -1,5 +1,5 @@
 // Declare the chart dimensions and margins.
-const width = 1300; // the outer width of the chart, in pixels
+const width = 1450; // the outer width of the chart, in pixels
 const height = window.innerHeight;
 const apiKey = "L2RVpyHPSsvfTDaECnTmlpEnuqa5Fdns8So91S2P";
 
@@ -40,7 +40,7 @@ async function fetchData() {
 	let totalLines = 0;
 
 	//Change the date to a 2 months ago
-	fromDate.setMonth(fromDate.getMonth() - 2);
+	fromDate.setMonth(fromDate.getMonth() - 3);
 	//Remove time from the date
 	const fromDateString = fromDate.toISOString().split("T")[0];
 	//Build API url with the date as parameter
@@ -62,13 +62,13 @@ async function fetchData() {
 					magnitudeData.push({
 						x1: -nmo.absolute_magnitude_h / 10,
 						x2: nmo.absolute_magnitude_h / 10,
-						y: yOffset / (near_earth_objects.length + 1),
+						y: yOffset / near_earth_objects.length,
 					});
 
 					diameterData.push({
 						x1: -nmo.estimated_diameter.meters.estimated_diameter_min,
 						x2: nmo.estimated_diameter.meters.estimated_diameter_max,
-						y: yOffset / (near_earth_objects.length + 1),
+						y: yOffset / near_earth_objects.length,
 					});
 
 					velocityData.push({
@@ -76,13 +76,13 @@ async function fetchData() {
 							.kilometers_per_second,
 						x2: nmo.close_approach_data[0].relative_velocity
 							.kilometers_per_second,
-						y: yOffset / (near_earth_objects.length + 1),
+						y: yOffset / near_earth_objects.length,
 					});
 
 					missedDistanceData.push({
 						x1: -nmo.close_approach_data[0].miss_distance.lunar,
 						x2: nmo.close_approach_data[0].miss_distance.lunar,
-						y: yOffset / (near_earth_objects.length + 1),
+						y: yOffset / near_earth_objects.length,
 					});
 
 					yOffset++;

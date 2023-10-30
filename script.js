@@ -288,6 +288,28 @@ function showScatterGraph(data) {
 
 	var canvasGroup = eventGroup.append("g").attr("id", "circleGroup");
 
+	// create a tooltip
+	var tooltip = d3
+		.select("#scatterplot")
+		.append("div")
+		.style("position", "absolute")
+		.style("visibility", "hidden")
+		.text("I'm a circle!");
+
+	//
+	d3.select("#circleBasicTooltip")
+		.on("mouseover", function () {
+			return tooltip.style("visibility", "visible");
+		})
+		.on("mousemove", function () {
+			return tooltip
+				.style("top", event.pageY - 800 + "px")
+				.style("left", event.pageX - 800 + "px");
+		})
+		.on("mouseout", function () {
+			return tooltip.style("visibility", "hidden");
+		});
+
 	// Chart Assembly
 
 	var crosshairSettings = {
@@ -348,6 +370,7 @@ function showScatterGraph(data) {
 		.data(theData)
 		.enter()
 		.append("circle")
+		.attr("id", "circleBasicTooltip")
 		.attr("cx", function (d) {
 			return xScale(d.cx);
 		})
