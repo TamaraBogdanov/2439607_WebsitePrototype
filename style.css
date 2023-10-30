@@ -283,7 +283,7 @@ footer {
 	display: flex;
 	gap: 10%;
 }
-#myBlog {
+#h-entry {
 	display: flex;
 	justify-content: center;
 	align-items: center;
