@@ -60,6 +60,7 @@ function fetchAPOD() {
 
 	showGraph(apodDate);
 }
+// First Graph
 
 function showGraph(toDate) {
 	const loader = document.getElementById("loader");
