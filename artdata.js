@@ -22,6 +22,8 @@ var voronoi = d3
 
 getData();
 
+//Drag functions
+
 function dragstarted(d) {
 	d3.select(this).raise().classed("active", true);
 }
@@ -44,7 +46,7 @@ function renderCell(d) {
 
 function getData() {
 	let totalLineData = [];
-	//Remove time from the date
+
 	const fromDateString = "2023-08-18";
 	//Build API url with the date as parameter
 	const apiUrl = `https://api.nasa.gov/neo/rest/v1/feed?api_key=${apiKey}&start_date=${fromDateString}`;
@@ -89,6 +91,7 @@ function getData() {
 		});
 }
 
+//Colour render
 function renderData() {
 	var color = d3
 		.scaleOrdinal()
@@ -107,6 +110,7 @@ function renderData() {
 			"#fcfdbf",
 		]);
 
+	//Circles and Cells
 	var circle = svg
 		.selectAll("g")
 		.data(circles)
