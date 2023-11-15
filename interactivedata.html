@@ -1,0 +1,65 @@
+<html lang="en">
+	<head>
+		<title>Data Prototype Website</title>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="description" content="Dev Website" />
+		<meta name="keywords" content="HTML, CSS, JavaScript" />
+		<meta name="author" content="Tamara Bogdanov" />
+		<link rel="stylesheet" href="style.css" />
+		<link
+			href="https://fonts.googleapis.com/css?family=Dosis&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	
+		<body class="backGround">
+			<section id="pageContainer">
+			<span id="contentWrap">
+		<nav class="navBar">
+							<img class="u-photo"
+								id="logo"
+								src="Images/full-moon-moon-png-989c668440f10a9793e9e486671216a2.png"
+								alt="Moon Logo"
+							/>
+							<ul>
+								<li><a href="index.html">Home</a></li>
+								<li><a href="bloghomepage.html">Blogs</a></li>
+								<li><a href="datavisuals.html">Data Visuals</a></li>   
+								<li><a href="designdoc.html">Documents</a></li>
+								<li><a href="arthomepage.html">Art</a></li>
+							</ul>
+		</nav>
+		
+		<main>
+		
+			
+				<section class="artText">
+					<h1>
+						Data Art of the day!
+					</h1>
+		
+				
+					<p>
+						Please be patient whilst the data of the day loads below! Below you will find a compliation of Nasa's NeoWs API asteroid data:
+					</p>
+		
+					<p>
+						Each colour represents a different day and the unique patterns 
+						and line fluctuations are a compliation of multiple asteroid's data, such as their velocity, size and distance from earth!
+					</p>
+					<p>
+						All of the data is combined and fluctuated in different patterns representing the multiple asteroids data per a collection of days. 
+		
+					</p>
+					<p>The art piece below changes daily and records a set of different dates to display accordingly.</p>
+				</section>
+		
+		<svg width="960" height="500"></svg>
+
+		<script src="https://d3js.org/d3.v5.min.js"></script>
+		<script src="artdata.js"></script>
+		</main>
+	</body>
+</html>

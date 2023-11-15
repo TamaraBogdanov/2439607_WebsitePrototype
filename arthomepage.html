@@ -1,0 +1,102 @@
+<html lang="en">
+	<head>
+		<title>Data Prototype Website</title>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="description" content="Dev Website" />
+		<meta name="keywords" content="HTML, CSS, JavaScript" />
+		<meta name="author" content="Tamara Bogdanov" />
+		<link rel="stylesheet" href="style.css" />
+		<link
+			href="https://fonts.googleapis.com/css?family=Dosis&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body class="backGround">
+		<nav class="navBar">
+			<img
+				class="u-photo"
+				id="logo"
+				src="Images/full-moon-moon-png-989c668440f10a9793e9e486671216a2.png"
+				alt="Moon Logo"
+			/>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="bloghomepage.html">Blogs</a></li>
+				<li><a href="datavisuals.html">Data Visuals</a></li>
+				<li><a href="designdoc.html">Documents</a></li>
+				<li><a href="arthomepage.html">Art</a></li>
+			</ul>
+		</nav>
+
+		<header id="h-entry">
+			<section class="blogHeading1">
+				<h1>My Art</h1>
+			</section>
+		</header>
+		<main class="artContainers">
+			<section class="artText1">
+				<h2>Here is a compliation of my Data Art!</h2>
+
+				<p>Throughout my journey i have created two sets of Data Art.</p>
+				<p>
+					There is a static and interactive representation utilizing different
+					data all from the NeoWs Nasa API.
+				</p>
+				<p>
+					The unique Asteroid data has manipulated the shapes of my pieces to
+					create a unique data pattern.
+				</p>
+				<p>
+					The static art piece changes daily! Whilst the interactive can be
+					manipulated and played around with.
+				</p>
+			</section>
+
+			<section class="blogContainer">
+				<section class="blogBox">
+					<figure class="blogIMG">
+						<img
+							class="u-photo"
+							src="Images/dataArt.png"
+							alt="Image of Static Data Art"
+						/>
+					</figure>
+
+					<article class="blogText">
+						<h2>Static Art</h2>
+
+						<button onclick="window.location.href='art.html';" class="btn1">
+							<span>See More </span>
+						</button>
+					</article>
+				</section>
+
+				<section class="blogBox">
+					<figure class="blogIMG">
+						<img
+							class="u-photo"
+							src="Images/interactiveDataArt.png"
+							alt="Image of Interactive Data Art"
+						/>
+					</figure>
+
+					<article class="blogText">
+						<h2>Interactive Art</h2>
+
+						<button
+							onclick="window.location.href='interactivedata.html';"
+							class="btn1"
+						>
+							<span>See More </span>
+						</button>
+					</article>
+				</section>
+			</section>
+		</main>
+		<footer id="footer">
+			<p class="p-name">&copy; 2023 Tamara's Website. All Rights Reserved.</p>
+		</footer>
+	</body>
+</html>

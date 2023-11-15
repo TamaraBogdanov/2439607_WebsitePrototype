@@ -11,6 +11,7 @@
 	font-size: 20px;
 	width: 80%;
 	margin: auto;
+	margin-top: -2.1%;
 }
 
 .navBar ul {
@@ -29,7 +30,7 @@
 
 #footer {
 	bottom: 0;
-	width: 98.7%;
+	width: 100%;
 	height: 2.5rem; /* Footer height */
 	color: white;
 	background-color: rgba(7, 73, 131, 0.856);
@@ -128,6 +129,35 @@ footer {
 }
 
 .banner p {
+	color: white;
+	font-size: 20px;
+	margin-left: 5%;
+	margin-top: 1%;
+}
+
+.banner1 {
+	width: 100%;
+	margin-left: 850px;
+	margin-top: -500px;
+}
+
+.banner1 h1 {
+	color: rgb(8, 119, 215);
+	font-size: 50px;
+	margin-left: 5%;
+	margin-top: 20%;
+	margin-bottom: 5%;
+}
+
+.banner1 h1 {
+	color: rgb(8, 119, 215);
+	font-size: 50px;
+	margin-left: 5%;
+	margin-top: 5%;
+	margin-bottom: 5%;
+}
+
+.banner1 p {
 	color: white;
 	font-size: 20px;
 	margin-left: 5%;
@@ -307,6 +337,17 @@ footer {
 	margin-top: -1%;
 }
 
+.blogHeading1 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	margin-top: 1.5%;
+	margin-bottom: 4.5%;
+	font-size: 25px;
+	color: rgb(8, 119, 215);
+}
+
 .blogHeading h1 {
 	font-size: 30px;
 	color: rgb(8, 119, 215);
@@ -318,6 +359,7 @@ footer {
 	justify-content: center;
 	align-items: center;
 	flex-wrap: wrap;
+	margin-bottom: 7%;
 }
 
 .blogBox {
@@ -463,6 +505,114 @@ footer {
 	font-size: 25px;
 	padding-bottom: 5%;
 	padding-top: 3%;
+}
+
+:root {
+	--blue: rgb(3, 34, 62);
+	--darkblue: rgb(8, 119, 215);
+	--platinum: #e5e5e5;
+	--black: #2b2d42;
+	--white: #fff;
+	--thumb: #edf2f4;
+}
+
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	font: 16px / 24px "Rubik", sans-serif;
+	color: var(--black);
+	background: var(--platinum);
+	margin: 50px 0;
+}
+
+.container {
+	max-width: 1400px;
+	padding: 0 15px;
+	margin: 0 auto;
+	margin-top: 2%;
+	margin-bottom: 5.2%;
+}
+
+h2 {
+	font-size: 32px;
+	margin-bottom: 1em;
+}
+
+.cards {
+	display: flex;
+	padding: 25px 0px;
+	list-style: none;
+	overflow-x: scroll;
+	scroll-snap-type: x mandatory;
+}
+
+.card {
+	display: flex;
+	flex-direction: column;
+	flex: 0 0 100%;
+	padding: 20px;
+	background: var(--white);
+	border-radius: 12px;
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 15%);
+	scroll-snap-align: start;
+	transition: all 0.2s;
+}
+
+.card:not(:last-child) {
+	margin-right: 10px;
+}
+
+.card:hover {
+	color: var(--white);
+	background: var(--blue);
+}
+
+.card .cardTitle {
+	font-size: 20px;
+}
+
+.card .cardContent {
+	margin: 20px 0;
+	max-width: 85%;
+}
+
+.card .cardLinkWrapper {
+	margin-top: auto;
+}
+
+.card .cardLink {
+	display: inline-block;
+	text-decoration: none;
+	color: white;
+	background: var(--blue);
+	padding: 6px 12px;
+	border-radius: 8px;
+	transition: background 0.2s;
+}
+
+.card:hover .cardLink {
+	background: var(--darkblue);
+}
+
+.cards::-webkit-scrollbar {
+	height: 12px;
+}
+
+.cards::-webkit-scrollbar-thumb,
+.cards::-webkit-scrollbar-track {
+	border-radius: 92px;
+}
+
+.cards::-webkit-scrollbar-thumb {
+	background: var(--darkblue);
+}
+
+.cards::-webkit-scrollbar-track {
+	background: var(--thumb);
 }
 
 /*Data Visuals Graphs, APIs*/
@@ -662,7 +812,7 @@ line {
 /*Art Data Section */
 
 .artText {
-	padding: 2%;
+	padding: 1%;
 }
 .artText h1 {
 	color: rgb(39, 133, 216);
@@ -674,7 +824,6 @@ line {
 	align-items: center;
 	padding: 1%;
 	margin-top: -10px;
-	margin-bottom: 2%;
 }
 
 .artText p {
@@ -688,10 +837,28 @@ line {
 	padding: 1%;
 }
 
+.artText1 {
+	float: left;
+	padding: 2%;
+}
+.artText1 p {
+	color: white;
+	margin: 0;
+	padding: 1%;
+	font-size: 20px;
+}
+
+.artText1 h2 {
+	color: rgb(109, 64, 186);
+}
 #artContainer {
 	margin-left: 40px;
 }
 
+.artContainers {
+	margin-top: -2.4%;
+	margin-bottom: 5%;
+}
 .div2 {
 	height: 20%;
 }
@@ -857,6 +1024,35 @@ code {
 	width: 100%;
 	height: 100%;
 	float: right;
+}
+@media (min-width: 500px) {
+	.card {
+		flex-basis: calc(50% - 10px);
+	}
+
+	.card:not(:last-child) {
+		margin-right: 20px;
+	}
+}
+
+@media (min-width: 700px) {
+	.card {
+		flex-basis: calc(calc(100% / 3) - 20px);
+	}
+
+	.card:not(:last-child) {
+		margin-right: 30px;
+	}
+}
+
+@media (min-width: 1100px) {
+	.card {
+		flex-basis: calc(25% - 30px);
+	}
+
+	.card:not(:last-child) {
+		margin-right: 40px;
+	}
 }
 
 @media screen and (max-width: 600px) {
