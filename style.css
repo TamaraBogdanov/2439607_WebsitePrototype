@@ -18,7 +18,10 @@
 	flex: 1;
 	text-align: right;
 }
-
+.interactiveArt {
+	float: right;
+	margin-top: -1%;
+}
 #pageContainer {
 	position: relative;
 	min-height: 90vh;
@@ -841,6 +844,7 @@ line {
 	float: left;
 	padding: 2%;
 }
+
 .artText1 p {
 	color: white;
 	margin: 0;
